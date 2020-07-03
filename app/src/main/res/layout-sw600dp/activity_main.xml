@@ -5,14 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.android.hellotoast.MainActivity">
+    tools:context=".MainActivity">
+
 
     <TextView
         android:id="@+id/show_count"
         android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:gravity="center"
+        android:layout_height="20dp"
+        android:layout_marginBottom="344dp"
         android:background="#FFFF00"
+        android:gravity="center"
         android:text="0"
         android:textAlignment="center"
         android:textColor="@color/colorPrimary"
@@ -20,13 +22,15 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toStaffOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button_toast"/>
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/button_toast"
+        app:layout_constraintTop_toStaffOf="parent" />
 
     <Button
         android:id="@+id/button_toast"
         android:layout_width="510dp"
         android:layout_height="135dp"
+        android:layout_marginTop="220dp"
         android:background="@color/colorPrimary"
         android:onClick="showToast"
         android:text="Toast"
@@ -34,8 +38,6 @@
         android:textSize="60sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-
 
     <Button
         android:id="@+id/button_count"
@@ -47,7 +49,7 @@
         android:textColor="@android:color/white"
         android:textSize="60sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/button_count"
-        app:layout_constraintStart_toEndOf="@+id/bottom_toast"/>
+        app:layout_constraintStart_toEndOf="@+id/bottom_toast" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
